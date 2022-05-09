@@ -1,10 +1,12 @@
-package com.alaqsa.android_lab.service;
+package com.alaqsa.android_lab.service.Service;
 
 import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
 import android.util.Log;
+
+import com.alaqsa.android_lab.service.R;
 
 public class MyMusicService extends Service {
     MediaPlayer mediaPlayer;

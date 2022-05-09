@@ -1,15 +1,12 @@
-package com.alaqsa.android_lab.service;
+package com.alaqsa.android_lab.service.Ativity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
+import com.alaqsa.android_lab.service.Service.MyMusicService;
 import com.alaqsa.android_lab.service.databinding.ActivityMainBinding;
-
-import java.nio.channels.AcceptPendingException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(this.binding.getRoot());
 
         binding.start.setOnClickListener(v ->
-                startService(new Intent(MainActivity.this,MyMusicService.class)));
+                startService(new Intent(MainActivity.this, MyMusicService.class)));
 
         binding.stop.setOnClickListener(v -> {
            //Intent intent= ;
